@@ -163,7 +163,8 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  numero =Math.ceil(num);
+  return nummero;
 }
 
 function numeroRandom() {
