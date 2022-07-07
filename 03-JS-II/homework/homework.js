@@ -88,8 +88,8 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:  
-  resul=(numero-Math.floor(numero))
-  if (numero === resul){rps = "flase";}else if(numero >0 || numero <0){rps = "true";}
+  
+  if (numero-Math.floor(numero)==0){rps = "true";}else {rps = "false";}
   return rps;
 }
 
@@ -109,6 +109,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  if(num1 ==0 || num2==0 || num3 ==0){rps="error";
+   }else if (num1 < 0 || num2 < 0 || num3 < 0){rps="Hay negativos";
+   }else if(num3 > num1 && num3 >  num2  ){rps=num3+1; 
+    }else if (num1 > num2 && num1 > num3 && num1 >0){rps="Numero 1  es mayor y positivo"}else{rps="false";}
+  return rps;
 }
 
 function esPrimo(numero) {
@@ -130,7 +135,7 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí  
   
 }
 
