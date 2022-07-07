@@ -12,6 +12,8 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if(edad >=18){rps="Allowed";}else{rps="Not allowed";}
+  retunr rps;
 }
   
 function conection(status) {
@@ -20,6 +22,8 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if(status === 1){rps="Online";}else if(status === 2){rps="Away";}else{rps="Offline";}
+  return rps;
 }
 
 function saludo(idioma) {
@@ -29,6 +33,8 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if(idioma=== "aleman"){rps="Guten Tag!";}else if (idioma ==="mandarin"){rps="Ni Hao";}else if(idioma ==="ingles"){rps="Hello"; }else{rps="Hola!";}
+  return rps;
 }
 
 function colors(color) {
@@ -92,6 +98,8 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if(numero%3==0 && numero%5==0){rps="fizzbuzz"}else if(numero%5==0){rps="buzz";}else if(numero%3==0){rps="fizz";}else{rps=": "+numero;}
+  return rps;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -109,6 +117,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  
 }
 
 function esVerdadero(valor){
