@@ -5,7 +5,8 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-}
+ if (x === y ){ rsp = x || y; 
+}else if(x < y){ rsp  = "es mayor "+y}else{rsp="es mayor:"+x;} return rsp;}
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
@@ -38,18 +39,39 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color){
+  case"blue" ||"azul": rps="This  is blue ";
+   break;
+    case "red": rps="This is red";
+      break;
+    case "green": rps="This is green";
+      break;
+    case "orange": rps="This is orange";
+      break;
+    default:  rps=" color not found";
+      break;
+  
+  
+  
+  
+  }
+  return rps;
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(numero ===10 || numero ===5){rsp="true";}else{ rsp="false";}
+  return rsp;
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(numero <50 && numero >20){ rps = "true";}else{rps="flase";}
+  return rps;
 }
 
 function esEntero(numero) {
@@ -59,7 +81,10 @@ function esEntero(numero) {
   // Ejemplo: -10 -> true
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
-  // Tu código:
+  // Tu código:  
+  resul=(numero-Math.floor(numero))
+  if (numero === resul){rps = "flase";}else if(numero >0 || numero <0){rps = "true";}
+  return rps;
 }
 
 function fizzBuzz(numero) {
