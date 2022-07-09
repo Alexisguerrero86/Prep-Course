@@ -142,7 +142,9 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+   if(numero.length = 3 &&  numero %2 ==0 ){rps="true"}else {rps rps="false"}
   
+  return rps;
 }
 
 function doWhile(numero) {
