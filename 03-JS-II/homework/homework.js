@@ -129,14 +129,22 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  
+  if(valor === "true" || valor === true){rps="soy  verdadero"} else if(valor === "false" || valor === false){rps="soy falso"}
+return rps;
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí  
-  
+  //Escribe tu código aquí 
+  multi=[];  for (let i = 0; i < 61; i++) {
+    result=(6*i); 
+    
+   multis2=`6  x ${i} = ${result}`
+    multis = multi.push(multis2)
+    }
+  return multi
 }
 
 function tieneTresDigitos(numero){
