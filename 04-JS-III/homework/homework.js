@@ -9,12 +9,17 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  frutas =["fresas","platano","naranja","tunas"];
+  i=(frutas.length -1);
+  return frutas[i];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  array =["fresa","platano","tunas","Naranja"];
+  return  array.length;
 }
 
 
@@ -23,6 +28,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  nEnteros =[];
+  rps = array+1
+   numero =  nEnteros.push(rps);
+   return nEnteros;
 }
 
 
