@@ -28,8 +28,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  nEnteros =[];
-  rps = array+1
+  nEnteros =[1,2,3,4];
+  
    numero =  nEnteros.push(rps);
    return nEnteros;
 }
@@ -39,6 +39,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  frutas =["fresas","naranja","platano"];
+  fruta = frutas.push(elemento);
+  return frutas;
 }
 
 
@@ -47,6 +50,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  frutas=["fresa","platano","tunas"]
+   fruta = frutas.unshift(elemento);
+  return frutas;
 }
 
 
@@ -56,6 +62,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  frases=["Hello","world"];
+  rps= ` ${frases[i]} ${frases[i]} !`;
+  return rps;
 }
 
 
@@ -63,6 +72,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  i =0;   frutas =["fresa","platano","pera","naranja"];
+  for(let i = 0; i< frutas.length ; i++){
+  
+  ix =frutas.indexOf(elemento);
+  if(frutas[ix] == frutas[i]){rps=true}else{rps = false}
+   }
+  return rps;
 }
 
 
@@ -70,7 +86,13 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-}
+    let suma =0;
+  numeros=[1,2,3,4,5,6,7,8,9];
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];}
+return suma;
+
+  }
 
 
 function promedioResultadosTest(resultadosTest) {
@@ -84,6 +106,8 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  numeros =[2,35,4,5,626,7,8,999,10,11,122];
+  
 }
 
 
