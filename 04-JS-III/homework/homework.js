@@ -1,8 +1,10 @@
 // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento(array) {
+function devolverPrimerElemento(i) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  array =["platanos","papaya","fresa","tomate"];
+  retunr array[i];
 }
 
 
@@ -99,6 +101,14 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  
+   resultadosTest =[12,32,51,65,65,82,45]
+    resultado=0;
+    suma =0;
+  for(let i =0;i <resultadosTest.length ;i++){
+  suma = suma + resultadosTest[i];
+  resultado = suma / resultadosTest.length;}
+  return resultado;
 }
 
 
@@ -106,15 +116,20 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  numeros =[2,35,4,5,626,7,8,999,10,11,122];
+  
+  numeros =[2,35,4,5,626,7,8,999,10,11,12];
   
 }
 
 
-function multiplicarArgumentos() {
+function multiplicarArgumentos(n1,n2,n3) {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  
+  if(n1 ===0 & n2 ===0 & n3 ===0){ rps = 0}else if( ){}else{resulta = n1*n2*n3}
+  
+   retunr resulta
 }
 
 
