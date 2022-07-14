@@ -127,16 +127,22 @@ function multiplicarArgumentos(n1,n2,n3) {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   
-  if(n1 ===0 & n2 ===0 & n3 ===0){ rps = 0}else if( ){}else{resulta = n1*n2*n3}
+  if(n1 ===0 & n2 ===0 & n3 ===0){ rps = 0}else if( ){}else{rps= n1*n2*n3}else{rps=0}
   
-   retunr resulta
+   retunr rps;
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  numero =[12,32,65,24,151,54,58,5,7,12,26,,7,658,655,]
+  mayoreA18 =[]
+  for(let i =0 ; i < numero.length ;i++){
+   if( numero[i] > 18 ){
+      mayo = mayoreA18.push(numero[i]);}}
+   
+  return mayoreA18.length ;
 }
 
 
@@ -145,6 +151,8 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+  numero =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+  
   
 } 
 
