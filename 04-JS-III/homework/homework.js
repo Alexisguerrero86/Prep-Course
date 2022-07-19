@@ -1,10 +1,10 @@
 // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento(i) {
+function devolverPrimerElemento() {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
   array =["platanos","papaya","fresa","tomate"];
-  retunr array[i];
+  return array.shift();
 }
 
 
@@ -12,8 +12,8 @@ function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
   frutas =["fresas","platano","naranja","tunas"];
-  i=(frutas.length -1);
-  return frutas[i];
+  
+  return frutas.pop();
 }
 
 
